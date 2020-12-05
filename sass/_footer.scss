@@ -1,0 +1,10 @@
+.footer {
+    background-color: $color-light-black;
+    grid-column: full-start / full-end;
+    color: $color-white;
+}
+.footer ul {
+    padding: 2rem;
+    list-style-type: none;
+    display: block;
+}

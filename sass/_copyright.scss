@@ -1,0 +1,9 @@
+.copyright {
+    background-color: $color-white;
+    grid-column: full-start / full-end;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.copyright p {
+    font-size: 1rem;
+}

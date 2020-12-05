@@ -1,0 +1,14 @@
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+.u-margin-bottom-medium { margin-bottom: 4rem !important; }
+.u-margin-bottom-large { margin-bottom: 8rem !important; }
+
+.icon-menu {
+    @extend %fa-icon;
+    @extend .fas;
+
+    font-size: 4rem;
+  
+    &:before {
+      content: fa-content($fa-var-bars);
+    }
+  }

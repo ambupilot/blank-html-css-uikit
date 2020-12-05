@@ -1,0 +1,70 @@
+$fa-font-path:        "../node_modules/@fortawesome/fontawesome-free/webfonts";
+
+// COLORS
+
+$color-primary: #A67D03;
+
+$color-light: #f2f2f2;
+
+$color-light-grey: #cccccc;
+$color-dark-grey: #666666;
+$color-white: #ffffff;
+
+$color-light-black: #242526;
+$color-dark-black: #191a1b;
+$color-black: #000000;
+
+$color-red: #ff5a52;
+$color-yellow: #e6c029;
+$color-green: #52c22c;
+
+// FONTS
+$font-primary: 'Open Sans', sans-serif;
+$font-heading: 'Open Sans Condensed', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+// STANDARDS
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
+    @include respond(tab-port) {
+        font-size: 60%;
+    }
+    @include respond(tab-land) {
+        font-size: 70%;
+    }
+    @include respond(big-desktop) {
+        font-size: 80%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-light-black;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 2rem 50vh min-content 20vw min-content repeat(3, min-content) 2rem;
+    grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(2rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 25rem) [col-end] ) [center-end] minmax(2rem, 1fr) [full-end];
+
+}

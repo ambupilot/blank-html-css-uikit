@@ -1,0 +1,20 @@
+@import "mixins";
+
+@import "base";
+@import "typography";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+@import "utils";
+
+@import "sidebar";
+@import "header";
+@import "slides";
+@import "story";
+@import "portfolio";
+@import "socials";
+@import "footer";
+@import "copyright";
+
+@import "popup";

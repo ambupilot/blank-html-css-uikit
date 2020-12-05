@@ -1,0 +1,24 @@
+.sidebar {
+    background-color: $color-primary;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+    padding-top: 2rem;
+    padding-left: 1.2rem;
+}
+.menu-icon {
+    transform-origin: left top 0;
+
+    transition: all .5s .2s;
+    color: $color-white;
+    &:link,
+    &:visited {
+        color: $color-white;
+        text-decoration: none;
+        font-weight: 400;
+    }
+    &:hover {
+        color: $color-light-grey;
+        transition: all .2s .1s;
+    }
+
+}

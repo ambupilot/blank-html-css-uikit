@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+
+    <title>Portret Fotograaf - portfolio website</title>
+</head>
+
+<body class="container">
+    <div class="sidebar">
+        <a uk-toggle="target: #my-id" class="menu-icon icon-menu"></a>
+    </div>
+
+    <header class="header">
+
+        <!-- This is the modal -->
+        <div id="my-id" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title"></h2>
+                <button class="uk-modal-close" type="button"></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="slides">
+        Slides<br><br>
+        <a href="#popup">Bekijk de popup!</a>
+        <!-- This is a button toggling the modal -->
+        <button uk-toggle="target: #my-id" type="button" class="uk-button uk-button-primary">open de modal</button>
+
+    </div>
+
+    <div class="story__pictures">
+        Story pictures
+        <div class="user">Martijn</div>
+    </div>
+
+    <div class="story__content">
+        Story content
+    </div>
+
+    <div class="portfolio">
+        <ul class="uk-list uk-list-striped">
+            <li>een</li>
+            <li>twee</li>
+            <li>drie</li>
+        </ul>
+    </div>
+
+    <div class="socials">
+        Socials
+    </div>
+
+    <footer class="footer">
+        <ul>
+            <li>Menu item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </footer>
+
+    <div class="copyright">
+        <p>Copyright 2020 Martijn Kerssing - Groesbeek</p>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/menu-foto.jpg" alt="popup plaaatje" class="popup__img">
+            </div>
+            <div class="popup__middle">
+                <h2 class="heading-2 u-margin-bottom-medium">Navigatie</h2>
+                <ul class="popup__ul-nav">
+                    <li>Menu item 1</li>
+                    <li>Tweede item</li>
+                    <li>Derde item in de rij</li>
+                    <li>Menu item 1</li>
+                </ul>
+            </div>
+            <div class="popup__right">
+                <a href="/" class="popup__close">&times;</a>
+                <h2 class="heading-2 u-margin-bottom-medium">Contact</h2>
+                <ul class="popup__ul-contact">
+                    <li>Martijn Kerssing</li>
+                    <li>Meikeverstraat 24</li>
+                    <li>6561 ZK GROESBEEK</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- UIkit JS -->
+<script src="uikit/uikit.min.js"></script>
+<script src="uikit/uikit-icons.min.js"></script>
+
+</html>
