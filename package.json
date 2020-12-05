@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "geen",
+  "main": "index.js",
+  "scripts": {
+    "setup:files": "mkdir ./components && mkdir ./css && mkdir ./js && mkdir ./img && mkdir ./sass && mkdir ./uikit && touch ./index.html && touch ./sass/main.scss && touch ./uikit/style.scss",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start:live-server": "live-server",
+    "compile:uikit": "sass uikit/style.scss css/uikit.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambupilot/blank-html-css-uikit.git"
+  },
+  "keywords": [
+    "martijn"
+  ],
+  "author": "Kerssing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ambupilot/blank-html-css-uikit/issues"
+  },
+  "homepage": "https://github.com/ambupilot/blank-html-css-uikit#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "uikit": "^3.5.10"
+  }
+}
