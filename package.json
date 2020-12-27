@@ -4,7 +4,7 @@
   "description": "geen",
   "main": "index.js",
   "scripts": {
-    "setup:files": "mkdir ./components && mkdir ./css && mkdir ./js && mkdir ./img && mkdir ./sass && mkdir ./uikit && touch ./index.html && touch ./sass/main.scss && touch ./uikit/style.scss",
+    "setup:files": "mkdir ./components && mkdir ./css && mkdir ./js && mkdir ./img && mkdir ./sass && mkdir ./sass/layout && touch ./sass/layout/_base.scss && touch ./sass/layout/_mixin.scss && touch ./sass/layout/_header.scss && touch ./sass/layout/_footer.scss && touch ./sass/layout/_navigation.scss && touch ./sass/layout/_typography.scss && mkdir ./sass/components && mkdir ./uikit && touch ./sass/main.scss &&touch ./index.html && touch ./sass/main.scss && touch ./uikit/style.scss",
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "start:live-server": "live-server",
     "compile:uikit": "sass uikit/style.scss css/uikit.css"
